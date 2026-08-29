@@ -24,4 +24,11 @@ class CalculadoraDeTempoTest {
 
         assertEquals(300, calculadora.getTempoTotal());
     }
+
+    @Test
+    void deveManterTempoTotalZeroQuandoNaoHaTitulos() {
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+
+        assertEquals(0, calculadora.getTempoTotal());
+    }
 }
